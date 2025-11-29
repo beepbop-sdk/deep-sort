@@ -1,0 +1,35 @@
+{
+  "name": "@bigbang-sdk/deep-sort",
+  "description": "A library for deep sorting using",
+  "homepage": "https://github.com/bigbang-sdk/deep-sort",
+  "keywords": [
+    "deep-sort",
+    "json-deep-sort"
+  ],
+  "author": "Bigbang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigbang-sdk/deep-sort.git"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "pack": "npm run build && npm pack --pack-destination ./archive/"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@tamtamchik/json-deep-sort": "^1.4.1",
+    "superjson": "^2.2.6"
+  }
+}
