@@ -1,5 +1,6 @@
 {
   "name": "@bb-labs/deep-sort",
+  "version": "0.0.0",
   "description": "A library for deep sorting using",
   "homepage": "https://github.com/beepbop-labs/deep-sort",
   "keywords": [
